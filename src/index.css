@@ -1,0 +1,93 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 120 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 120 30% 15%;
+    --secondary-foreground: 120 100% 80%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 120 70% 70%;
+    --accent-foreground: 0 0% 10%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 120 100% 40%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 12%;
+
+    --sidebar-foreground: 0 0% 98%;
+
+    --sidebar-primary: 120 100% 40%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 120 30% 30%;
+
+    --sidebar-accent-foreground: 0 0% 98%;
+
+    --sidebar-border: 0 0% 20%;
+
+    --sidebar-ring: 120 100% 40%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .terminal-text {
+    @apply font-mono text-hacker-green;
+  }
+  
+  .command-text {
+    @apply font-mono text-hacker-green bg-hacker-black p-3 rounded-md border border-hacker-green/30 overflow-x-auto;
+  }
+  
+  .command-card {
+    @apply bg-hacker-dark-gray border border-hacker-green/20 rounded-md p-4 
+           shadow-lg shadow-hacker-green/5 transition-all 
+           hover:shadow-hacker-green/10 hover:border-hacker-green/40;
+  }
+
+  .sidebar-item {
+    @apply transition-colors duration-200 cursor-pointer px-3 py-2 rounded-md;
+  }
+
+  .sidebar-item-active {
+    @apply bg-secondary text-secondary-foreground;
+  }
+  
+  .cursor-blink::after {
+    content: "▋";
+    @apply animate-blink-cursor;
+  }
+}
