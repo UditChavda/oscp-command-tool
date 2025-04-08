@@ -1723,7 +1723,7 @@ export const commandData: Category = {
         }
       ]
     },
-  "Lateral Movement": {
+  "Lateral Movement(ignore)": {
     "SMB": [
       {
         title: "Pass the Hash",
