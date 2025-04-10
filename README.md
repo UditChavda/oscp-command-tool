@@ -1,103 +1,60 @@
+🧠 OSCP Command Toolbox
 
+A Powerful, Customizable, and Offline-Ready Pentesting Cheat Sheet for OSCP & Beyond
 
-# 🧠 OSCP Command Toolbox
+🔍 About the Project
 
-![GitHub Repo stars](https://img.shields.io/github/stars/uditchavda/oscp-command-tool?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/uditchavda/oscp-command-tool?style=for-the-badge)
-![GitHub license](https://img.shields.io/github/license/uditchavda/oscp-command-tool?style=for-the-badge)
-![Built with HTML, CSS, JS](https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JavaScript-blueviolet?style=for-the-badge)
+The OSCP Command Toolbox is your all-in-one, browser-based OSCP command reference crafted for aspiring and experienced penetration testers. Whether you're studying for the OSCP exam or need a fast reference during real-world engagements, this sleek web app gives you quick access to categorized, dynamic, and copy-ready commands—with zero dependency on internet or bulky PDFs.
+✨ Key Features
 
-> A fully customizable, offline-ready, and beautifully designed OSCP cheat sheet web app to power up your offensive security game.
+    📂 Comprehensive Coverage: Recon, Enumeration, Exploitation, Privilege Escalation (Linux & Windows), Pivoting, Cracking, and more.
 
-![Banner](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/oscp-banner.png)
+    💡 Dynamic Variables: Replace <IP>, <PORT>, <LHOST>, etc. across commands in real time.
 
----
+    🔎 Smart Search: Instantly find any tool, section, or command description.
 
-## 🎯 Live Demo
+    🖱️ One-Click Copy: Copy commands directly to clipboard—no more manual selection.
 
-🚀 [Try It Now – OSCP Command Toolbox](https://uditchavda.github.io/oscp-command-tool)
+    🌐 Fully Offline Capable: Host it locally or on GitHub Pages—no external dependencies.
 
----
+    🧰 JSON-Powered Backend: Easily expand or customize your command sets via toolbox.json.
 
-## ✨ Features
+    🎨 Clean Hacker-Themed UI: Dark mode, responsive design, and OSCP-themed background for immersive focus.
 
-🔹 **Comprehensive Categories** – From Recon to Privilege Escalation and Pivoting, it's all here.  
-🔹 **Dynamic Command Variables** – Auto-replace `<IP>`, `<PORT>`, `<LHOST>`, etc. across all commands.  
-🔹 **Instant Search** – Find tools, sections, or keywords in a flash.  
-🔹 **One-Click Copy** – Copy commands directly to clipboard.  
-🔹 **100% Offline Usable** – Host locally or on GitHub Pages.  
-🔹 **Hack-Themed UI** – Clean layout, dark mode, and OSCP vibes.
+🚀 Live Demo
 
----
+👉 Use it now – OSCP Command Toolbox
+📁 How to Use It Locally
 
-## 🖼️ Screenshots
-
-### 📚 Main Interface  
-![Main Interface](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/main-interface.png)
-
-### 🧠 Dynamic Command Input  
-![Dynamic Inputs](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/command-input.png)
-
----
-
-## 🎞️ Demo GIF
-
-![Demo GIF](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/demo.gif)
-
----
-
-## 🛠️ Local Setup
-
-```bash
-# Clone the repo
+# Clone the repository
 git clone https://github.com/uditchavda/oscp-command-tool.git
 
-# Go to the project folder
+# Navigate to the folder
 cd oscp-command-tool
 
-# Open it in browser
-open index.html  # or just double-click it
+# Open index.html in any browser
 
-🧩 Customize Your Toolbox
+Or just open index.html directly after downloading.
+🔧 Customize Commands
 
-Edit the toolbox.json file to add new sections, tools, and commands.
+You can add/edit tools and commands by editing the toolbox.json file. Structure:
 
 {
-  "Enumeration": {
-    "nmap": [
+  "Section Name": {
+    "Tool Name": [
       {
-        "title": "Quick Scan",
-        "command": "nmap -sC -sV <IP>"
+        "title": "Description",
+        "command": "command using <IP>, <PORT>, <LHOST>, etc."
       }
     ]
   }
 }
 
-🔁 Placeholders like <IP>, <PORT>, <LHOST> are automatically replaced with your input.
-🧑‍💻 Contribute
+💬 Want to Contribute?
 
-PRs, issues, suggestions—all are welcome!
-Let’s build the ultimate OSCP pentest toolbox together.
+Found a cool technique or an OSCP-relevant command that’s missing?
+Open a PR or drop it in Issues—let’s build the ultimate toolbox together!
+📄 License
 
-📬 Raise an Issue
-📂 Submit a PR
-📜 License
-
-Released under the MIT License – use freely, share widely, learn deeply.
-🙌 Credits
-
-Created with 💻 and ☕ by Udit Chavda
-Inspired by Liodeus OSCP Cheatsheet, HackTricks, and the offensive security community.
-
-
----
-
-📌 **Next Steps**:  
-To make this even better:
-
-- Upload actual screenshots & GIFs to `/assets/screenshots/` in your repo.  
-- Replace placeholder URLs in the markdown above with your hosted image links.  
-- Consider adding a favicon/logo too!
-
-Want help creating those GIFs or optimizing the screenshots? Just say the word.
-
+This project is licensed under the MIT License.
+Use it, fork it, share it freely 🚀
