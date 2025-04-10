@@ -1,74 +1,103 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/090665cd-b819-4e3c-b46f-425efa9daed3
+# 🧠 OSCP Command Toolbox
 
-## How can I edit this code?
+![GitHub Repo stars](https://img.shields.io/github/stars/uditchavda/oscp-command-tool?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/uditchavda/oscp-command-tool?style=for-the-badge)
+![GitHub license](https://img.shields.io/github/license/uditchavda/oscp-command-tool?style=for-the-badge)
+![Built with HTML, CSS, JS](https://img.shields.io/badge/Built%20With-HTML%20%7C%20CSS%20%7C%20JavaScript-blueviolet?style=for-the-badge)
 
-There are several ways of editing your application.
+> A fully customizable, offline-ready, and beautifully designed OSCP cheat sheet web app to power up your offensive security game.
 
-**Use Lovable**
+![Banner](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/oscp-banner.png)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/090665cd-b819-4e3c-b46f-425efa9daed3) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🎯 Live Demo
 
-**Use your preferred IDE**
+🚀 [Try It Now – OSCP Command Toolbox](https://uditchavda.github.io/oscp-command-tool)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## ✨ Features
 
-Follow these steps:
+🔹 **Comprehensive Categories** – From Recon to Privilege Escalation and Pivoting, it's all here.  
+🔹 **Dynamic Command Variables** – Auto-replace `<IP>`, `<PORT>`, `<LHOST>`, etc. across all commands.  
+🔹 **Instant Search** – Find tools, sections, or keywords in a flash.  
+🔹 **One-Click Copy** – Copy commands directly to clipboard.  
+🔹 **100% Offline Usable** – Host locally or on GitHub Pages.  
+🔹 **Hack-Themed UI** – Clean layout, dark mode, and OSCP vibes.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🖼️ Screenshots
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 📚 Main Interface  
+![Main Interface](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/main-interface.png)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### 🧠 Dynamic Command Input  
+![Dynamic Inputs](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/command-input.png)
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🎞️ Demo GIF
 
-**Use GitHub Codespaces**
+![Demo GIF](https://raw.githubusercontent.com/uditchavda/oscp-command-tool/main/assets/screenshots/demo.gif)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 🛠️ Local Setup
 
-This project is built with:
+```bash
+# Clone the repo
+git clone https://github.com/uditchavda/oscp-command-tool.git
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Go to the project folder
+cd oscp-command-tool
 
-## How can I deploy this project?
+# Open it in browser
+open index.html  # or just double-click it
 
-Simply open [Lovable](https://lovable.dev/projects/090665cd-b819-4e3c-b46f-425efa9daed3) and click on Share -> Publish.
+🧩 Customize Your Toolbox
 
-## Can I connect a custom domain to my Lovable project?
+Edit the toolbox.json file to add new sections, tools, and commands.
 
-Yes it is!
+{
+  "Enumeration": {
+    "nmap": [
+      {
+        "title": "Quick Scan",
+        "command": "nmap -sC -sV <IP>"
+      }
+    ]
+  }
+}
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🔁 Placeholders like <IP>, <PORT>, <LHOST> are automatically replaced with your input.
+🧑‍💻 Contribute
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
-# oscp-command-tool
+PRs, issues, suggestions—all are welcome!
+Let’s build the ultimate OSCP pentest toolbox together.
+
+📬 Raise an Issue
+📂 Submit a PR
+📜 License
+
+Released under the MIT License – use freely, share widely, learn deeply.
+🙌 Credits
+
+Created with 💻 and ☕ by Udit Chavda
+Inspired by Liodeus OSCP Cheatsheet, HackTricks, and the offensive security community.
+
+
+---
+
+📌 **Next Steps**:  
+To make this even better:
+
+- Upload actual screenshots & GIFs to `/assets/screenshots/` in your repo.  
+- Replace placeholder URLs in the markdown above with your hosted image links.  
+- Consider adding a favicon/logo too!
+
+Want help creating those GIFs or optimizing the screenshots? Just say the word.
+
